@@ -1,0 +1,14 @@
+[Unit]
+Description=robingood
+
+[Service]
+Type=idle
+Restart=always
+RestartSec=60s
+ExecStart=-bash -c "taskset -c 7 /home/deck/.bot/robingood.py"
+Restart=on-failure
+RestartSec=10s
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
