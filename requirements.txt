@@ -1,0 +1,9 @@
+python-dotenv
+asyncio
+py7zr
+rarfile
+telethon
+aiohttp
+guessit
+pathlib
+TgCrypto
